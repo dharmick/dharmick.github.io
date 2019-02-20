@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>form</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+      <!-- main css -->
+      <link rel="stylesheet" href="main.css">
+
+      <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+
+
+  </head>
+  <body>
+  <section class="form-wrapper">
+    <div class="container">
+      <div class="intro">
+        <img src="logo.jpg" class="logo" alt="">
+        <p>
+          We the Kanthis a clan of renowned prestigious Bhatia community, basically from Jaiselmer
+           - Rajasthan have settled in various parts of India mainly in Gujarat & spreaded their wings
+           of success worldwide achieving milestones in various fields.<br>
+
+    Now the YOUNG ENTREPRENEURS created WEBSITE for Bhatia Entrepreneurs to give them a platform to
+    explore a different Business Avenue under ONE CLICK...<br>
+
+    We would  appreciate you to take this idea forward & add more Bhatias in our initiative to
+     grow Kanthi Bhatia Entrepreneurs.
+        </p>
+      </div>
+      <form action="" id="form">
+        <div class="alert alert-success alert-dismissible fade in">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong>Success!</strong> Form submitted succesfully!
+        </div>
+        <div class="alert alert-danger alert-dismissible fade in">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        </div>
+        <div class="row form-inputs">
+          <h6 class="text-muted">
+            <span class="bold">Note: </span>Fields marked with ( <span class="red">*</span> ) are compulsory.
+          </h6>
+          <div class="personal-info col-sm-6">
+            <h3>Personal Details:</h3>
+            <div class="form-group">
+              <label for="first-name">First Name <span class="red">*</span></label>
+              <input type="text" class="form-control" id="first-name" name="first-name"  required>
+            </div>
+            <div class="form-group">
+              <label for="middle-name">Middle Name <span class="red">*</span></label>
+              <input type="text" class="form-control" id="middle-name" name="middle-name"  required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name <span class="red">*</span></label>
+              <input type="text" class="form-control" id="last-name" name="last-name"  required>
+            </div>
+            <div class="form-group">
+              <label for="contact">Contact no <span class="red">*</span></label>
+              <input type="text" class="form-control" id="contact" name="contact" pattern="[0-9]{10}" title="Length should be exact 10 (Numbers only)" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email ID <span class="red">*</span></label>
+              <input type="email" class="form-control" id="email" name="email"  required>
+            </div>
+            <div class="form-group">
+              <label for="mode-of-communication">Preferred mode of communication <span class="red">*</span></label>
+              <select name="mode-of-communication" id="mode-of-communication" class="form-control"  required>
+                <option value="email">E-mail</option>
+                <option value="contact-no">Contact no</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="vasti">Vasti Patrak Number</label>
+              <input type="number" class="form-control" id="vasti" name="vasti-patrak-no">
+            </div>
+            <div class="form-group">
+              <label for="linked-in">Linkedin Profile</label>
+              <input type="url" class="form-control" id="linked-in" name="linked-in" placeholder="start with http:// or https://">
+            </div>
+          </div>
+
+          <div class="company-info col-sm-6">
+            <h3>Bussiness Details:</h3>
+            <div class="form-group">
+              <label for="company-name">Company Name <span class="red">*</span></label>
+              <input type="text" class="form-control" id="company-name" name="company-name"  required>
+            </div>
+            <div class="form-group">
+              <label for="company-address-1">Address Line 1 (Shop no, Building Name) <span class="red">*</span></label>
+              <input type="text" class="form-control" id="company-address-1" name="company-address-1"  required>
+            </div>
+            <div class="form-group">
+              <label for="company-address-2">Address Line 2 (Landmark, Street Name) <span class="red">*</span></label>
+              <input type="text" class="form-control" id="company-address-2" name="company-address-2"  required>
+            </div>
+            <div class="form-group">
+              <label for="company-address-3">Address Line 3 (Area) <span class="red">*</span></label>
+              <input type="text" class="form-control" id="company-address-3" name="company-address-3"  required>
+            </div>
+            <div class="form-group">
+              <label for="company-description">Company Description <span class="red">*</span></label>
+              <input type="text" class="form-control" id="company-description" name="company-description"  required>
+            </div>
+            <div class="form-group">
+              <label for="industry">Industry <span class="red">*</span></label>
+              <select name="industry" id="industry" class="form-control" required>
+                <option value="">-- Select --</option>
+                <option value="Accounting">Accounting</option>
+                <option value="Architecture">Architecture</option>
+                <option value="Chemicals">Chemicals</option>
+                <option value="Computer">Computer</option>
+                <option value="Construction">Construction</option>
+                <option value="Education">Education</option>
+                <option value="food">Food</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Inport/Export">Import/Export</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Media Production">Media Production</option>
+                <option value="Real Estate">Real Estate</option>
+                <option value="Retail">Retail</option>
+                <option value="Sports">Sports</option>
+                <option value="Tech">Tech</option>
+                <option value="Wholesale">Wholesale</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group other-industry">
+              <label for="other-industry">Please specify Industry<span class="red">*</span></label>
+              <input type="text" class="form-control" id="other-industry" name="other-industry">
+            </div>
+            <div class="form-group">
+              <label for="website">Website</label>
+              <input type="url" class="form-control" id="website" name="website" placeholder="start with http:// or https://">
+            </div>
+            <div class="form-group">
+              <label for="suggestions">Suggestions/Comments (if any)</label>
+              <input type="text" class="form-control" id="suggestions" name="suggestions">
+            </div>
+          </div>
+        </div>
+
+        <!-- <input type="text" name="verify" value="" required hidden>
+        <div
+        class="g-recaptcha"
+        data-sitekey="6LfYlmQUAAAAAHRmZHLbQgXf7cYsSxa3aFJAoZ_u">
+      </div> -->
+
+        <div class="checkbox">
+          <label><input type="checkbox" required> I hereby declare that the details furnished above are true and correct to the best of my knowledge
+      and belief. <br>I hereby authorize sharing of the information on this form with the owner and take full
+      responsibility of the details submitted.</label>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="row">
+      <div class="col-sm-6">
+        <i class="fa fa-heart-o"></i>
+        <h4>Shri Sailesh Ashar: <a href="tel:9930595102">99305-95102</a></h4>
+        <h4>Shri Jimit Negandhi: <a href="tel:9892397205">98923-97205</a></h4>
+        <h4>Email us at <a href="mailto:kanthibhatia@gmail.com">kanthibhatia@gmail.com</a></h4>
+      </div>
+      <div class="col-sm-6">
+        <h6>Website Courtesy - Smt. Aruna Mulji Bhatia Parivaar</h6>
+        <h5>Managed by Parivartan Group</h5>
+        <h5>Developed by <a href="https://linkedin.com/in/naitikudeshi">Naitik Udeshi</a>
+           and <a href="https://linkedin.com/in/dharmik-joshi-aa493013a/">Dharmik Joshi</a></h5>
+      </div>
+    </div>
+  </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+
+
+
+    <script>
+
+var $element = $('.other-industry');
+$element.hide();
+$('#industry').on('change',function(){
+  if(this.value=='Other') {
+    $element.show();
+    $('#other-industry').attr('required','true');
+  }
+  else {
+    $element.hide();
+    $('#other-industry').removeAttr('required');
+  }
+});
+
+$('input').attr('autocomplete','off');
+$('input, select').on('focus blur',function(){
+  $(this).parent().toggleClass('focused');
+});
+
+    // Variable to hold request
+var request;
+$('.alert').hide();
+
+// Bind to the submit event of our form
+$("#form").submit(function(event){
+
+  // Abort any pending request
+  if (request) {
+      request.abort();
+  }
+  // setup some local variables
+  var $form = $(this);
+
+
+  // Let's select and cache all the fields
+  var $inputs = $form.find("input, select, button, textarea");
+
+  // Serialize the data in the form
+  var serializedData = $form.serialize();
+
+  // Let's disable the inputs for the duration of the Ajax request.
+  // Note: we disable elements AFTER the form data has been serialized.
+  // Disabled form elements will not be serialized.
+  $inputs.prop("disabled", true);
+
+  // Fire off the request to /form.php
+  request = $.ajax({
+      url: "https://script.google.com/macros/s/AKfycbyaqEzNuAXf_GpjnrCCdCEbqHqI7Ug73n6h8NXLoLV52hNred0/exec",
+      type: "post",
+      data: serializedData
+  });
+
+  // Callback handler that will be called on success
+  request.done(function (response, textStatus, jqXHR){
+      $inputs.val('');
+      $('.alert-success').show();
+  });
+
+  // Callback handler that will be called on failure
+  request.fail(function (jqXHR, textStatus, errorThrown){
+      $('.alert-danger').innerHTML = "The following error occurred: "+
+      textStatus + " " + errorThrown;
+      $('alert-danger').show();
+  });
+
+  // Callback handler that will be called regardless
+  // if the request failed or succeeded
+  request.always(function () {
+      // Reenable the inputs
+      $inputs.prop("disabled", false);
+  });
+
+  // Prevent default posting of form
+  event.preventDefault();
+});
+    </script>
+
+
+    <!-- main js -->
+    <script src=main.js></script>
+
+  </body>
+</html>

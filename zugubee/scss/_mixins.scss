@@ -1,0 +1,112 @@
+@mixin section-title {
+  span {
+    font-size: 10rem;
+    color: rgba(47, 47, 47, 0.05);
+    font-family: 'metropolis','sans-serif';
+    font-weight: 400;
+  }
+  h3 {
+    font-family: 'open-sans','sans-serif';
+    font-weight: bold;
+    font-size: 4rem;
+    margin-top: -8rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    transform: translateY(-55px);
+    background-image: linear-gradient(97deg, #56ab2f, #a8e063);
+  }
+  @media(max-width: 500px) {
+    span {
+      font-size: 7.5rem;
+    }
+    h3 {
+      font-size: 3rem;
+      margin-top: 0;
+    }
+  }
+}
+
+
+@mixin section-subtitle {
+  font-family: 'metropolis','sans-serif';
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #f87651;
+  letter-spacing: 3px;
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 15rem;
+  @media(max-width: 500px) {
+    font-size: 1.2rem;
+    margin-bottom: 8rem;
+  }
+}
+
+@mixin line($width) {
+  content: "";
+  position: absolute;
+  width: $width;
+  height: 2px;
+  background: #f87651;
+  top: 5px;
+  margin: 0 5px;
+  border-radius: 1px;
+}
+
+@mixin and-right {
+  h4 {
+    font-family: 'metropolis', 'sans-serif';
+    font-weight: 800;
+    letter-spacing: 0.9px;
+    font-size: 3.6rem;
+    color: rgba(88, 64, 98, 0.27);
+    display: inline;
+    position: relative;
+    @media(max-width: 500px) {
+      font-size: 3rem;
+    }
+    &:after {
+      content: '&';
+      position: absolute;
+      top: -4.8rem;
+      right: -10.5rem;
+      font-family: 'metropolis','sans-serif';
+      font-size: 14rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: rgba(168, 224, 99, 0.54);
+    }
+  }
+}
+
+@mixin and-left {
+  h4 {
+    font-family: 'metropolis', 'sans-serif';
+    font-weight: 800;
+    letter-spacing: 0.9px;
+    font-size: 3.6rem;
+    color: rgba(88, 64, 98, 0.27);
+    display: inline;
+    position: relative;
+    &:before {
+      content: '&';
+      position: absolute;
+      top: -4.8rem;
+      left: -7rem;
+      font-family: 'metropolis','sans-serif';
+      font-size: 14rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: rgba(168, 224, 99, 0.54);
+    }
+  }
+}
+
+@mixin logo-card($side,$shadow){
+  width: $side;
+  height: $side;
+  box-shadow: $shadow;
+  line-height: $side;
+}

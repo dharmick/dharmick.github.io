@@ -1,0 +1,19 @@
+/*========================
+  animation logo-scale
+  ========================*/
+@keyframes logo-scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.logos .logo {
+  animation: logo-scale infinite 4s;
+}
+
+/*# sourceMappingURL=animations.css.map */

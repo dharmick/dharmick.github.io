@@ -1,0 +1,360 @@
+@font-face {
+  font-family: 'metropolis';
+  src: url(../font/Metropolis/Metropolis-Bold.woff2), url(../font/Metropolis/Metropolis-Bold.woff), url(../font/Metropolis/Metropolis-Bold.ttf);
+  font-weight: 400; }
+@font-face {
+  font-family: 'metropolis';
+  src: url(../font/Metropolis/Metropolis-ExtraBold.woff2), url(../font/Metropolis/Metropolis-ExtraBold.woff), url(../font/Metropolis/Metropolis-ExtraBold.ttf);
+  font-weight: 800; }
+@font-face {
+  font-family: 'open-sans';
+  src: url(../font/Open_Sans/OpenSans-Regular.ttf); }
+@font-face {
+  font-family: 'open-sans';
+  src: url(../font/Open_Sans/OpenSans-Semibold.ttf);
+  font-weight: bold; }
+/*===================================devices GREATER than 1440px==================================*/
+@media (min-width: 1440px) {
+  .banner-bg {
+    height: 60rem; } }
+/*===================================devices less than 1200px==================================*/
+@media (max-width: 1200px) {
+  /*========================
+    SECTION banner-content
+    ========================*/
+  .banner-content img {
+    margin-top: -16rem; }
+  .banner-content .card {
+    width: 40rem; }
+
+  /*========================
+    SECTION lang-and-db
+    ========================*/
+  .lang-and-db .logos {
+    margin-top: 100px;
+    margin-left: 50%; }
+
+  /*========================
+    SECTION tools-and-ide
+    ========================*/
+  .tools-and-ide .logos {
+    margin-top: 180px; }
+
+  /*========================
+    SECTION infrastructure
+    ========================*/
+  .infrastructure .logos {
+    margin-top: 180px;
+    margin-left: 50%; } }
+/*===================================devices less than 992px==================================*/
+@media (max-width: 992px) {
+  html {
+    font-size: 9px; }
+
+  /*========================
+    SECTION banner-content
+    ========================*/
+  .banner-content .card {
+    margin-left: auto;
+    width: 100%;
+    height: auto; }
+
+  /*========================
+    SECTION uidesign
+    ========================*/
+  .ui-design .design-text h4 {
+    margin-top: 10rem;
+    font-size: 6rem; }
+  .ui-design .design-color {
+    margin: 0 auto; }
+    .ui-design .design-color h5:after {
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 2px;
+      background: #f87651;
+      top: 5px;
+      margin: 0 5px;
+      border-radius: 1px; }
+
+  /*========================
+    SECTION engineering
+    ========================*/
+  .engineering .engineering-content .challenges-slider .slick-slider:after {
+    width: 0; }
+
+  /*========================
+    SECTION languages and database
+    ========================*/
+  .lang-and-db .logos {
+    margin: 180px auto 0 auto; }
+
+  /*========================
+    SECTION tools and ide
+    ========================*/
+  .tools-and-ide .logos {
+    margin: 180px auto 0 auto; }
+
+  /*========================
+    SECTION infrastructure
+    ========================*/
+  .infrastructure .logos {
+    margin: 180px auto 0 auto; } }
+/*===================================devices less than 768px==================================*/
+@media (max-width: 768px) {
+  html {
+    font-size: 8px; }
+
+  /*========================
+    SECTION banner-content
+    ========================*/
+  .banner-content img {
+    width: 20rem; }
+  .banner-content .card {
+    width: 90%;
+    margin-top: 1rem;
+    padding: 3rem 2rem; }
+
+  /*========================
+    SECTION about
+    ========================*/
+  .about .about-data {
+    text-align: center;
+    border-left: none;
+    margin-bottom: 7rem; }
+    .about .about-data:after {
+      content: "";
+      width: 70%;
+      height: 2px;
+      background: #979797;
+      position: absolute;
+      left: 15%; }
+
+  /*========================
+    SECTION uidesign
+    ========================*/
+  .ui-design .design-text h4 {
+    margin-top: 15rem; }
+
+  /*========================
+    SECTION icons
+    ========================*/
+  .icons {
+    padding-left: 5rem;
+    padding-right: 5rem; } }
+/*===================================devices less than 550px==================================*/
+@media (max-width: 550px) {
+  /*========================
+    SECTION uidesign
+    ========================*/
+  .ui-design .design-text h4 {
+    font-size: 3.8rem; }
+  .ui-design .design-color h5:after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background: #f87651;
+    top: 5px;
+    margin: 0 5px;
+    border-radius: 1px; }
+
+  /*========================
+    SECTION walkthrough-screens
+    ========================*/
+  .walkthrough-screens h3:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #f87651;
+    top: 5px;
+    margin: 0 5px;
+    border-radius: 1px; }
+
+  /*========================
+    SECTION home-screens
+    ========================*/
+  .home-screens h3:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #f87651;
+    top: 5px;
+    margin: 0 5px;
+    border-radius: 1px; }
+
+  /*========================
+    SECTION other-screens
+    ========================*/
+  .other-screens h3:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #f87651;
+    top: 5px;
+    margin: 0 5px;
+    border-radius: 1px; }
+
+  /*========================
+    SECTION icons
+    ========================*/
+  .icons h3:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #f87651;
+    top: 5px;
+    margin: 0 5px;
+    border-radius: 1px; }
+
+  /*========================
+    SECTION engineering
+    ========================*/
+  .engineering {
+    padding-bottom: 15rem; }
+    .engineering .engineering-content {
+      margin-top: 5rem; }
+
+  /*========================
+    SECTION architecture
+    ========================*/
+  .architecture h3:after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background: #f87651;
+    top: 5px;
+    margin: 0 5px;
+    border-radius: 1px; }
+
+  /*========================
+    SECTION languages and database
+    ========================*/
+  .lang-and-db .logos {
+    width: auto;
+    max-width: 330px; }
+    .lang-and-db .logos .python {
+      width: 136px;
+      height: 136px;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+      line-height: 136px;
+      top: -20px;
+      left: 90px; }
+    .lang-and-db .logos .java {
+      width: 84px;
+      height: 84px;
+      box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.2);
+      line-height: 84px;
+      top: 10rem;
+      left: 10; }
+    .lang-and-db .logos .mongodb {
+      width: 114px;
+      height: 114px;
+      box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+      line-height: 114px;
+      top: -100px;
+      left: 200px; }
+    .lang-and-db .logos img {
+      width: 70%; }
+
+  /*========================
+    SECTION tools and ide
+    ========================*/
+  .tools-and-ide .logos {
+    width: auto;
+    max-width: 330px; }
+    .tools-and-ide .logos .pycharm {
+      width: 80px;
+      height: 80px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+      line-height: 80px;
+      top: -100px;
+      left: 60px;
+      animation-delay: 100ms; }
+    .tools-and-ide .logos .trello {
+      width: 69px;
+      height: 69px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+      line-height: 69px;
+      top: 25px;
+      left: 0;
+      animation-delay: 400ms; }
+    .tools-and-ide .logos .android-studio {
+      width: 108px;
+      height: 108px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+      line-height: 108px;
+      z-index: 1;
+      left: 85px;
+      animation-delay: 800ms; }
+    .tools-and-ide .logos .sketch {
+      width: 70px;
+      height: 70px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+      line-height: 70px;
+      top: -65px;
+      left: 180px;
+      animation-delay: 1000ms; }
+    .tools-and-ide .logos .clevertap {
+      width: 61px;
+      height: 61px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+      line-height: 61px;
+      top: 0;
+      left: 260px;
+      animation-delay: 1200ms; }
+    .tools-and-ide .logos .slack {
+      width: 75px;
+      height: 75px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+      line-height: 75px;
+      top: 130px;
+      left: 40px;
+      animation-delay: 1500ms; }
+    .tools-and-ide .logos .zeplin {
+      width: 96px;
+      height: 96px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+      line-height: 96px;
+      top: 95px;
+      left: 160px;
+      animation-delay: 1900ms; }
+    .tools-and-ide .logos img {
+      width: 80%; }
+
+  /*========================
+    SECTION infrastructure
+    ========================*/
+  .infrastructure .logos {
+    width: auto;
+    max-width: 330px; }
+    .infrastructure .logos .firebase {
+      width: 114px;
+      height: 114px;
+      box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+      line-height: 114px;
+      top: -140px;
+      left: 10px; }
+    .infrastructure .logos .amazon {
+      width: 136px;
+      height: 136px;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+      line-height: 136px;
+      top: -50px;
+      left: 100px; }
+    .infrastructure .logos .mysql {
+      width: 115px;
+      height: 115px;
+      box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+      line-height: 115px;
+      top: 60px;
+      left: 200px; }
+    .infrastructure .logos img {
+      width: 80%; } }
+
+/*# sourceMappingURL=responsive.css.map */

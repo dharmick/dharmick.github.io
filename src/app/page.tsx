@@ -1,31 +1,27 @@
-import { About } from "@/components/About";
-import { Contact } from "@/components/Contact";
-import { Credibility } from "@/components/Credibility";
-import { Deliverables } from "@/components/Deliverables";
-import { Engineering } from "@/components/Engineering";
-import { FitCheck } from "@/components/FitCheck";
+import { Fit } from "@/components/Fit";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { Process } from "@/components/Process";
-import { Solutions } from "@/components/Solutions";
+import { Keys } from "@/components/Keys";
+import { Motion } from "@/components/Motion";
+import { Ribbon } from "@/components/Ribbon";
+import { Work } from "@/components/Work";
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <main id="main">
-        <Hero />
-        <Credibility />
-        <Solutions />
-        <FitCheck />
-        <Process />
-        <Deliverables />
-        <Engineering />
-        <About />
-        <Contact />
-      </main>
+      <div className="relative">
+        <Header />
+        <main id="main">
+          <Hero />
+          <Work />
+          <Ribbon />
+          <Fit />
+          <Keys />
+        </main>
+      </div>
       <Footer />
+      <Motion />
     </>
   );
 }

@@ -2,42 +2,71 @@
 
 :root {
   color-scheme: light;
-  --paper: #f3f1eb;
-  --sage: #c5cfc6;
-  --ink: #1c1f1d;
-  --muted: #5c665e;
-  --forest: #243028;
+  --sheet: #f3efe4;
+  --ink: #14120e;
+  --clay: #f0d9c8;
+  --sap: #d7ebc8;
+  --mist: #e3e6ef;
+  --lime: #d4f562;
+  --tangerine: #ff8a3d;
+  --aqua: #5ddec8;
+  --gold: #ffe08a;
+  --hot: #ff3b30;
+  --script: #3d3229;
+  --note-violet: #3f348f;
+  --note-rust: #9a3b16;
+  --footer: #3b308f;
+  --muted: #4a433a;
+  --foam: #fff6df;
 }
 
 @theme inline {
-  --color-paper: var(--paper);
-  --color-sage: var(--sage);
+  --color-sheet: var(--sheet);
   --color-ink: var(--ink);
+  --color-clay: var(--clay);
+  --color-sap: var(--sap);
+  --color-mist: var(--mist);
+  --color-lime: var(--lime);
+  --color-tangerine: var(--tangerine);
+  --color-aqua: var(--aqua);
+  --color-gold: var(--gold);
+  --color-hot: var(--hot);
+  --color-script: var(--script);
+  --color-note-violet: var(--note-violet);
+  --color-note-rust: var(--note-rust);
+  --color-footer: var(--footer);
   --color-muted: var(--muted);
-  --color-forest: var(--forest);
-  --font-sans: var(--font-geist-sans);
-  --font-display: var(--font-instrument);
+  --color-foam: var(--foam);
+  --font-sans: var(--font-satoshi), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display-face), ui-sans-serif, system-ui, sans-serif;
+  --font-script: var(--font-hand), ui-serif, cursive;
 }
 
 html {
-  background: var(--paper);
-  scroll-padding-top: 5.5rem;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
+  background: var(--sheet);
 }
 
 body {
-  background: var(--paper);
+  background: var(--sheet);
   color: var(--ink);
-  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-satoshi), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  [data-sticker] {
+    transform: rotate(var(--tilt));
+  }
+}
+
+@media (min-width: 1024px) {
+  [data-card] {
+    transform: rotate(var(--tilt));
+  }
 }
 
 ::selection {
-  background: var(--sage);
+  background: var(--lime);
   color: var(--ink);
 }
 
@@ -46,31 +75,85 @@ body {
   outline-offset: 4px;
 }
 
+footer :focus-visible {
+  outline-color: var(--lime);
+}
+
 .font-display {
-  font-family: var(--font-instrument), ui-serif, Georgia, serif;
+  font-family: var(--font-display-face), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.01em;
 }
 
-.label {
-  font-size: 0.6875rem;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--muted);
+.font-script {
+  font-family: var(--font-hand), ui-serif, cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .reveal {
-    animation: reveal 0.8s ease both;
-  }
+.band {
+  border-bottom-left-radius: clamp(2.5rem, 10vw, 10rem);
+  border-bottom-right-radius: clamp(2.5rem, 10vw, 10rem);
 }
 
-@keyframes reveal {
+.band-top {
+  border-top-left-radius: clamp(2.5rem, 10vw, 10rem);
+  border-top-right-radius: clamp(2.5rem, 10vw, 10rem);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border-radius: 999px;
+  font-family: var(--font-display-face), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  transition: transform 160ms ease;
+}
+
+.pill:hover {
+  transform: translateY(-2px);
+}
+
+.pill:active {
+  transform: translateY(0);
+}
+
+.marquee-track {
+  animation: marquee 32s linear infinite;
+}
+
+.marquee.is-paused .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
   from {
-    opacity: 0;
-    transform: translateY(12px);
+    transform: translateX(0);
   }
   to {
-    opacity: 1;
-    transform: none;
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    display: none;
+  }
+
+  .ribbon-static {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+    text-align: center;
+    font-family: var(--font-display-face), ui-sans-serif, system-ui, sans-serif;
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    font-weight: 900;
+    letter-spacing: -0.01em;
   }
 }

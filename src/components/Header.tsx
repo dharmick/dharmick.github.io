@@ -1,43 +1,40 @@
 import { mailto, site } from "@/content/site";
-import { MailIcon } from "@/components/icons";
+import { Cta } from "@/components/Cta";
+
+const tones = {
+  gold: "bg-gold",
+  lime: "bg-lime",
+  clay: "bg-clay",
+  mist: "bg-mist",
+} as const;
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-20 border-b border-ink/10 bg-paper">
+    <header className="pointer-events-none fixed inset-x-0 top-4 z-40 px-3">
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-6 focus:top-3 focus:z-30 focus:bg-paper focus:px-3 focus:py-2"
+        className="pointer-events-auto sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-0 focus:z-50 focus:rounded-full focus:bg-sheet focus:px-4 focus:py-2"
       >
         Skip to content
       </a>
-      <nav
-        aria-label="Primary"
-        className="mx-auto flex max-w-[1320px] flex-wrap items-center justify-between gap-x-4 gap-y-3 px-6 py-4 md:px-12 lg:px-16"
-      >
-        <a href="#main" className="text-sm tracking-wide">
-          {site.name}
-        </a>
-        <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
-          <ul className="flex flex-wrap items-center gap-x-5 gap-y-2">
-            {site.nav.map((item) => (
-              <li key={item.href}>
-                <a
-                  href={item.href}
-                  className="text-muted transition-colors hover:text-ink"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <a
-            href={mailto}
-            className="inline-flex items-center gap-2 bg-forest px-3.5 py-2 text-xs tracking-wide text-paper transition-colors hover:bg-ink"
-          >
-            <MailIcon className="size-4" />
-            {site.email}
-          </a>
-        </div>
+      <nav aria-label="Primary" className="pointer-events-auto mx-auto w-full max-w-3xl">
+        <ul className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2">
+          {site.nav.map((item) => (
+            <li key={item.href}>
+              <a
+                href={item.href}
+                className={`pill px-3 py-2 text-sm text-ink sm:px-3.5 ${tones[item.tone]}`}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+          <li>
+            <Cta href={mailto} compact>
+              {site.cta}
+            </Cta>
+          </li>
+        </ul>
       </nav>
     </header>
   );

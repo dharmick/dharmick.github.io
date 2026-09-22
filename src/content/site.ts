@@ -24,8 +24,8 @@ export const site = {
   ],
 
   hero: {
-    lines: ["Don't buy another Software.", "Buy outcomes directly."],
-    script: "The night shift, on purpose.",
+    lines: ["Software is so 2020.", "Buy outcomes instead."],
+    script: "SaaS is the old news",
     support: "AI automations and agents built around how your team actually works.",
   },
 

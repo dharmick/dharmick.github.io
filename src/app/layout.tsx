@@ -51,7 +51,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${sans.variable} ${display.variable} ${script.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-sheet font-sans text-ink">
+      <body className="min-h-full bg-white font-sans text-ink">
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>

@@ -26,7 +26,10 @@ export function Work() {
             {work.script}
           </p>
         </div>
-        <div className="mt-16 flex flex-col gap-6 lg:mt-24 lg:flex-row lg:items-start lg:justify-center lg:gap-6">
+        <div
+          data-lenis-prevent-touch
+          className="card-rail -mx-8 mt-16 flex snap-x snap-mandatory items-start gap-12 overflow-x-auto overscroll-x-contain px-8 py-8 md:-mx-16 md:px-16 lg:mx-0 lg:mt-24 lg:snap-none lg:justify-center lg:gap-6 lg:overflow-visible lg:px-0 lg:py-0"
+        >
           {work.items.map((item, index) => {
             const image = clerk[item.image as ClerkId];
             return (
@@ -35,7 +38,7 @@ export function Work() {
                 data-card
                 data-rotate={item.rotate}
                 style={{ "--tilt": `${item.rotate}deg` } as React.CSSProperties}
-                className={`w-full min-w-0 rounded-[1.8rem] p-6 lg:w-[calc((100%-4.5rem)/4)] ${lifts[index]} ${tones[item.tone]}`}
+                className={`w-[min(72vw,18.5rem)] shrink-0 snap-start rounded-[1.8rem] p-6 lg:w-[calc((100%-4.5rem)/4)] lg:min-w-0 lg:shrink lg:snap-align-none ${lifts[index]} ${tones[item.tone]}`}
               >
                 <Image
                   src={image.src}

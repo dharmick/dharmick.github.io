@@ -14,10 +14,12 @@ export default function Home() {
         <Header />
         <main id="main">
           <Hero />
-          <Work />
-          <Ribbon />
-          <Fit />
-          <Keys />
+          <div className="bg-white">
+            <Work />
+            <Ribbon />
+            <Fit />
+            <Keys />
+          </div>
         </main>
       </div>
       <Footer />

@@ -43,11 +43,11 @@
 }
 
 html {
-  background: var(--sheet);
+  background: #fff;
 }
 
 body {
-  background: var(--sheet);
+  background: #fff;
   color: var(--ink);
   font-family: var(--font-satoshi), ui-sans-serif, system-ui, sans-serif;
   font-weight: 500;
@@ -59,9 +59,28 @@ body {
   }
 }
 
+[data-card] {
+  transform: rotate(var(--tilt));
+}
+
+.card-rail {
+  scroll-padding-inline: 2rem;
+  scrollbar-width: none;
+}
+
+.card-rail::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .card-rail {
+    scroll-padding-inline: 4rem;
+  }
+}
+
 @media (min-width: 1024px) {
-  [data-card] {
-    transform: rotate(var(--tilt));
+  .card-rail {
+    scroll-padding-inline: 0;
   }
 }
 

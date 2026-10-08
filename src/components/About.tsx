@@ -6,7 +6,7 @@ export function About() {
   const { about } = site;
 
   return (
-    <Section id={about.id} labelledBy="about-heading" tone="white">
+    <Section id={about.id} labelledBy="about-heading" tone="mist">
       <div className="mx-auto max-w-[720px] text-center">
         <SectionHeading id="about-heading">{about.heading}</SectionHeading>
         <p className="section-intro">{about.body}</p>

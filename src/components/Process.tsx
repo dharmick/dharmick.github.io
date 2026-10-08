@@ -5,7 +5,7 @@ export function Process() {
   const { process } = site;
 
   return (
-    <Section id={process.id} labelledBy="process-heading" tone="mist">
+    <Section id={process.id} labelledBy="process-heading" tone="white">
       <SectionHeading id="process-heading">{process.heading}</SectionHeading>
       <ol className="mx-auto mt-10 grid max-w-[800px] list-none gap-5">
         {process.steps.map((step) => (

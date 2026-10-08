@@ -5,7 +5,7 @@ export function Faq() {
   const { faq } = site;
 
   return (
-    <Section id={faq.id} labelledBy="faq-heading" tone="foam">
+    <Section id={faq.id} labelledBy="faq-heading" tone="white">
       <SectionHeading id="faq-heading">{faq.heading}</SectionHeading>
       <div className="mx-auto mt-10 grid max-w-[800px] gap-4">
         {faq.items.map((item) => (

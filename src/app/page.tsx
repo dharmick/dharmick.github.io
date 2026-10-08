@@ -17,14 +17,14 @@ export default function Home() {
       <Header />
       <main id="main">
         <Hero />
-        <About />
-        <Start />
         <Jobs />
         <Examples />
+        <About />
         <Process />
         <DataRules />
         <AiFit />
         <Why />
+        <Start />
         <Faq />
       </main>
       <Footer />

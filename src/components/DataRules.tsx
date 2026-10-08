@@ -5,7 +5,7 @@ export function DataRules() {
   const { data } = site;
 
   return (
-    <Section id={data.id} labelledBy="data-heading" tone="foam">
+    <Section id={data.id} labelledBy="data-heading" tone="mist">
       <SectionHeading id="data-heading">{data.heading}</SectionHeading>
       <SectionIntro>{data.intro}</SectionIntro>
       <ul className="mx-auto mt-10 grid max-w-[900px] list-none gap-5 md:grid-cols-2">

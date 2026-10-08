@@ -5,7 +5,7 @@ export function Examples() {
   const { examples } = site;
 
   return (
-    <Section id={examples.id} labelledBy="examples-heading" tone="mist">
+    <Section id={examples.id} labelledBy="examples-heading" tone="white">
       <SectionHeading id="examples-heading">{examples.heading}</SectionHeading>
       <p className="note">{examples.disclaimer}</p>
       <ul className="mt-8 grid list-none gap-5 md:grid-cols-2">

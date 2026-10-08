@@ -5,7 +5,7 @@ export function Jobs() {
   const { work } = site;
 
   return (
-    <Section id={work.id} labelledBy="work-heading" tone="white">
+    <Section id={work.id} labelledBy="work-heading" tone="mist">
       <SectionHeading id="work-heading">{work.heading}</SectionHeading>
       <SectionIntro>{work.intro}</SectionIntro>
       <div className="mt-12 space-y-12">

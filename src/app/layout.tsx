@@ -47,6 +47,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full bg-white font-sans text-ink">
         {children}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd() }} />
+        <script
+          type="module"
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "8c3521e2ee39435cb1e09e599e7baedd"}'
+        />
       </body>
     </html>
   );

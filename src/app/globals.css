@@ -277,6 +277,18 @@ details[open] .menu-close {
   font-size: clamp(1.25rem, 2vw, 1.45rem);
 }
 
+.group-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: #e7f7e7;
+  color: var(--mint-ink);
+  padding: 0.35rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
 .step-index {
   margin-bottom: 0.45rem;
   font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;

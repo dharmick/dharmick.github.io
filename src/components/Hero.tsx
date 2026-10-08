@@ -1,5 +1,5 @@
 import { BookLink } from "@/components/BookLink";
-import { emailHref, site } from "@/content/site";
+import { site } from "@/content/site";
 
 export function Hero() {
   return (
@@ -12,14 +12,7 @@ export function Hero() {
         <div className="mt-8">
           <BookLink>{site.bookLabel}</BookLink>
         </div>
-        <p className="mt-4 text-base text-muted">
-          {site.hero.emailLead}{" "}
-          <a href={emailHref} className="text-link">
-            {site.email}
-          </a>
-          .
-        </p>
-        <p className="mt-3 text-sm text-muted">{site.hero.note}</p>
+        <p className="mt-4 text-sm text-muted">{site.hero.note}</p>
       </div>
     </section>
   );

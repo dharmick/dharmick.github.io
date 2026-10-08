@@ -22,7 +22,7 @@ export const site = {
     { label: "What I automate", href: "#work" },
     { label: "How I work", href: "#process" },
     { label: "Your data", href: "#data" },
-    { label: "About", href: "#about" },
+    { label: "About", href: "#why" },
     { label: "FAQ", href: "#faq" },
   ],
 
@@ -30,7 +30,6 @@ export const site = {
     heading: "Back-office work that runs itself.",
     support:
       "I automate the repetitive jobs across accounts, admin and ops, and hand you code you own.",
-    emailLead: "Prefer email? Write to",
     note: "The 15-minute call is free, and it's with me.",
   },
 
@@ -90,7 +89,8 @@ export const site = {
       "Each of these connects to tools you already use, such as Zoho, Google Sheets, Gmail, Excel and WhatsApp Business. On the call, I'll help you pick the one that costs you the most time.",
     groups: [
       {
-        title: "Money in: where most clients start",
+        title: "Getting paid",
+        badge: "Where most clients start",
         items: [
           {
             n: "1",

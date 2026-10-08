@@ -11,7 +11,10 @@ export function Jobs() {
       <div className="mt-12 space-y-12">
         {work.groups.map((group) => (
           <div key={group.title}>
-            <h3 className="group-title">{group.title}</h3>
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+              <h3 className="group-title">{group.title}</h3>
+              {"badge" in group ? <span className="group-badge">{group.badge}</span> : null}
+            </div>
             <ul className="mt-5 grid list-none gap-5 md:grid-cols-2">
               {group.items.map((item) => (
                 <li key={item.n} className="card">

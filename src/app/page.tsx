@@ -1,29 +1,33 @@
-import { Fit } from "@/components/Fit";
+import { About } from "@/components/About";
+import { AiFit } from "@/components/AiFit";
+import { DataRules } from "@/components/DataRules";
+import { Examples } from "@/components/Examples";
+import { Faq } from "@/components/Faq";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { Keys } from "@/components/Keys";
-import { Motion } from "@/components/Motion";
-import { Ribbon } from "@/components/Ribbon";
-import { Work } from "@/components/Work";
+import { Jobs } from "@/components/Jobs";
+import { Process } from "@/components/Process";
+import { Start } from "@/components/Start";
+import { Why } from "@/components/Why";
 
 export default function Home() {
   return (
     <>
-      <div className="relative">
-        <Header />
-        <main id="main">
-          <Hero />
-          <div className="bg-white">
-            <Work />
-            <Ribbon />
-            <Fit />
-            <Keys />
-          </div>
-        </main>
-      </div>
+      <Header />
+      <main id="main">
+        <Hero />
+        <Jobs />
+        <Examples />
+        <About />
+        <Process />
+        <DataRules />
+        <AiFit />
+        <Why />
+        <Start />
+        <Faq />
+      </main>
       <Footer />
-      <Motion />
     </>
   );
 }

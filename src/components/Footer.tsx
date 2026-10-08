@@ -1,45 +1,45 @@
-import { mailto, site, telHref } from "@/content/site";
-import { Cta } from "@/components/Cta";
-import { SplitText } from "@/components/SplitText";
+import { BookLink } from "@/components/BookLink";
+import { LinkedInLink } from "@/components/LinkedInLink";
+import { emailHref, site, telHref } from "@/content/site";
 
 export function Footer() {
   const year = new Date().getFullYear();
+  const { contact } = site;
 
   return (
-    <footer id="contact" className="band-top scroll-mt-28 bg-footer text-center text-sheet">
-      <div className="mx-auto max-w-4xl px-8 py-24 md:px-16 md:py-36">
-        <h2 className="mx-auto max-w-full font-display text-[clamp(2.65rem,9vw,6.5rem)] font-extrabold leading-[0.8] tracking-[-0.01em]">
-          <SplitText text={site.contact.heading} />
-        </h2>
-        <p className="mx-auto mt-5 max-w-[17rem] text-balance text-base leading-snug sm:max-w-md sm:text-lg">
-          {site.contact.support}
-        </p>
-        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
-          <Cta href={mailto} tone="hot">
-            {site.email}
-          </Cta>
-          <a
-            href={telHref}
-            className="pill border-2 border-sheet bg-transparent px-5 py-3 text-sheet"
-          >
-            {site.phoneDisplay}
-          </a>
-          <a
-            href={site.linkedin}
-            className="pill border-2 border-sheet bg-transparent px-5 py-3 text-sheet"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
+    <footer>
+      <section id={contact.id} aria-labelledby="contact-heading" className="band-night bg-night py-16 text-white md:py-[5.25rem]">
+        <div className="mx-auto w-full max-w-[720px] px-6 text-center">
+          <h2 id="contact-heading" className="section-title on-night">
+            {contact.heading}
+          </h2>
+          <p className="section-intro on-night">{contact.support}</p>
+          <div className="mt-8">
+            <BookLink>{site.bookLabel}</BookLink>
+          </div>
+          <address className="mt-6 space-y-2 text-base not-italic text-white/80">
+            <p>
+              {contact.emailLead}{" "}
+              <a href={emailHref} className="text-link on-night">
+                {site.email}
+              </a>
+            </p>
+            <p>
+              {contact.phoneLead}{" "}
+              <a href={telHref} className="text-link on-night">
+                {site.phone}
+              </a>
+            </p>
+            <p>
+              {site.location}. {contact.reply}
+            </p>
+          </address>
+          <p className="mt-4">
+            <LinkedInLink className="text-link on-night font-semibold" />
+          </p>
         </div>
-        <p className="mt-6 text-sm text-sheet/80">
-          {site.replyNote}
-          <span aria-hidden="true"> · </span>
-          {site.location}
-        </p>
-      </div>
-      <div className="px-8 pb-12 text-sm text-sheet/80">
+      </section>
+      <div className="border-t border-line bg-white px-6 py-6 text-center text-sm text-muted">
         <p>
           {site.name}
           <span aria-hidden="true"> · </span>

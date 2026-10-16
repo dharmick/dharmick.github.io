@@ -10,7 +10,7 @@ export const site = {
   description:
     "I find where your business leaks hours and money and build AI into the systems you already use. A person still approves what customers see. Bangalore, India.",
   email: "hey@dharmikjoshi.space",
-  phone: "+91 932425 8918",
+  phone: "+91 90710 81805",
   location: "Bangalore, India (IST)",
   linkedin: "https://www.linkedin.com/in/dharmikjoshi/",
   bookLabel: "Book a 15-minute call",

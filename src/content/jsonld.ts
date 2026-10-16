@@ -15,7 +15,7 @@ export function jsonLd() {
         "@id": personId,
         name: site.name,
         url: site.url,
-        jobTitle: "Software developer",
+        jobTitle: "AI operations partner",
         email: site.email,
         telephone: site.phone,
         address: {
@@ -39,6 +39,16 @@ export function jsonLd() {
           addressCountry: "IN",
         },
         founder: { "@id": personId },
+        knowsAbout: [
+          "AI for back-office operations",
+          "accounts and finance operations",
+          "admin and operations workflows",
+        ],
+        areaServed: [
+          { "@type": "Country", "name": "India" },
+          { "@type": "Country", "name": "United States" },
+          { "@type": "Place", "name": "Europe" },
+        ],
         sameAs: [site.linkedin],
       },
       {

@@ -47,6 +47,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full bg-white font-sans text-ink">
         {children}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd() }} />
+        {/* Keep the analytics beacon as committed. type=module is deferred; the lint rule flags any script src. */}
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <script
           type="module"
           src="https://static.cloudflareinsights.com/beacon.min.js"

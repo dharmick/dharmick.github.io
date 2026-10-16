@@ -43,7 +43,7 @@ export function ShareCard() {
             maxWidth: 980,
           }}
         >
-          Back-office work that runs itself.
+          Your AI Operations Partner
         </div>
       </div>
       <div style={{ fontSize: 28, color: "#4a5a5d" }}>Bangalore, India</div>
